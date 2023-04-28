@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tbsim-83ed3": {
+      "hosting": {
+        "tbsim": [
+          "tbsim-83ed3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tbsim-83ed3"
+  }
+}

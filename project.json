@@ -99,6 +99,16 @@
       "options": {
         "buildTarget": "tbsim:build"
       }
+    },
+    "deploy": {
+      "executor": "@angular/fire:deploy",
+      "options": {
+        "prerender": false,
+        "ssr": false,
+        "browserTarget": "tbsim:build:production",
+        "firebaseProject": "tbsim-83ed3",
+        "firebaseHostingSite": "tbsim-83ed3"
+      }
     }
   }
 }
