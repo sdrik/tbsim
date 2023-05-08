@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
+import { AuthComponent } from './auth/auth.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -18,7 +19,7 @@ describe('AppComponent', () => {
         MatSidenavModule,
         MatListModule,
       ],
-      declarations: [AppComponent],
+      declarations: [AppComponent, AuthComponent],
     }).compileComponents();
   });
 

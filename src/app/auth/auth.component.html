@@ -1,0 +1,15 @@
+<code>{{ (auth.user | async)?.displayName }}</code>
+<button *ngIf="showLoginButton" mat-icon-button routerLink="/sign-in">
+  <mat-icon>login</mat-icon>
+</button>
+<button *ngIf="showLoginButton" mat-icon-button routerLink="/register-user">
+  <mat-icon>person_add_alt</mat-icon>
+</button>
+<button
+  *ngIf="showLogoutButton"
+  mat-icon-button
+  type="button"
+  (click)="auth.logout()"
+>
+  <mat-icon>logout</mat-icon>
+</button>

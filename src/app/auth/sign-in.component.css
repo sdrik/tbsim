@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+}
+
+mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-beetween;
+}

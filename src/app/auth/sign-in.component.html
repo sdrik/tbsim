@@ -1,0 +1,53 @@
+<mat-card>
+  <mat-card-title>Login</mat-card-title>
+  <mat-card-content>
+    <form
+      class="login-form"
+      [formGroup]="loginForm"
+      #formDirective="ngForm"
+      (ngSubmit)="onSubmit(loginForm, formDirective)"
+    >
+      <mat-form-field class="full-width">
+        <mat-icon matPrefix>person_outline</mat-icon>
+        <input
+          autofocus
+          type="text"
+          matInput
+          placeholder="Username"
+          formControlName="email"
+        />
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-icon matPrefix>lock_outline</mat-icon>
+        <input
+          type="password"
+          autocomplete="false"
+          matInput
+          placeholder="Password"
+          formControlName="password"
+        />
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="social-buttons">
+      <button mat-fab color="primary" (click)="auth.loginWithFacebook()">
+        <fa-icon [icon]="faFacebookF" size="2xl"></fa-icon>
+      </button>
+      &nbsp;
+      <button mat-fab color="accent" (click)="auth.loginWithGoogle()">
+        <fa-icon [icon]="faGoogle" size="2xl"></fa-icon>
+      </button>
+    </div>
+    <button type="submit" mat-raised-button color="primary">LOGIN</button>
+  </mat-card-actions>
+  <!--
+    <span> If You don't have a account yet please <a routerLink='/register'>REGISTER HERE</a></span>
+-->
+</mat-card>
+<!--
+<p>
+    <button (click)="loginWithGoogle()">Log in with Google</button>
+    <button (click)="loginAnonymously()">Log in with Anonymously</button>
+</p>
+-->
