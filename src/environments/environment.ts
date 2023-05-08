@@ -5,7 +5,7 @@ export const environment = {
     storageBucket: 'tbsim-83ed3.appspot.com',
     locationId: 'europe-west',
     apiKey: 'AIzaSyDvqn8Jg_AMjKx7Ga1mebPY6QkFI3YWIgI',
-    authDomain: 'tbsim-83ed3.firebaseapp.com',
+    authDomain: 'tbsim.gabriello.fr',
     messagingSenderId: '983991627957',
   },
 };
